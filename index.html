@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Image to ASCII</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00ff00;
+        }
+        #asciiOutput {
+            white-space: pre;
+            font-size: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convert Image to ASCII (Improved)</h1>
+    <input type="file" id="imageUpload"><br><br>
+    <label for="toggle-edges">Enable Edge Detection</label>
+    <input type="checkbox" id="toggle-edges"><br><br>
+    <label for="edgeSensitivity">Edge Detection Sensitivity: <span id="sensitivityLabel">50</span></label><br>
+    <input type="range" id="edgeSensitivity" min="0" max="255" value="50"><br><br>
+    <pre id="asciiOutput"></pre>
+
+    <script src="asciiConverter.js"></script>
+</body>
+</html>
